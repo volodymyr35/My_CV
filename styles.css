@@ -103,23 +103,33 @@ h3 {
 
 
 
-.education-courses>li {
+.education-courses > li {
   margin: 20px 35px;
 }
 
+.education-description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 35px;
+}
 
-.university,
-.specialization {
+.courses-details {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.university {
   padding-left: 35px;
 }
 
 .languages-list {
-  padding-left: 25px;
+  padding-left: 10px;
+  list-style: none;
 }
 
 .contacts-list {
-  padding-left: 25px;
   cursor: pointer;
+  list-style: none;
 }
 
 .contact-me {
@@ -129,4 +139,8 @@ h3 {
 .contacts-list li:not(:last-child),
 .languages-list li:not(:last-child) {
   margin-bottom: 15px;
+}
+
+.map-marker {
+  cursor:auto;
 }
