@@ -17,7 +17,7 @@
     <aside class="sidebar">
       <div class="rectangle aside"></div>
       <div class="content">
-        <h1 class="full-name">Volodymyr <br> Zhukevych</h1>
+        <!-- <h1 class="full-name">Volodymyr <br> Zhukevych</h1> -->
         <img class="my-photo" src="assets/my_photo.jpg" alt="my photo" width="250">
         <div class="contacts">
           <h3 class="contacts-ttle">Contacts</h3>
@@ -45,7 +45,7 @@
                 target="_blank">Volodymyr_Zhukevych</a>
             </li>
             <li>
-              <img src="assets/map-marker.svg" alt="map icon" width="20px">
+              <img class="map-marker" src="assets/map-marker.svg" alt="map icon">
               <a class="contact-me map-marker">Lviv, Ukraine</a>
             </li>
 
@@ -54,7 +54,7 @@
         <div class="languages">
           <h3 class="language-title">Languages</h3>
           <ul class="languages-list">
-            <li>English - intermediate</li>
+            <li>English - intermediate </li>
             <li>Polish - fluent</li>
             <li>Ukrainian - native</li>
           </ul>
@@ -62,15 +62,18 @@
       </div>
     </aside>
     <div class="main">
-      <div class="rectangle white"></div>
+      <div class="full-name">
+        <h1>Volodymyr Zhukevych</h1>
+        <h3>Software Engineer</h3>
+      </div>
       <div class="content">
         <div class="summary">
           <h3 class="summary-title">Summary
           </h3>
           <p class="summary-intro">
-            I'm interested in the latest development of the web-technologies and how they can impact our lives.
-            Looking for ways to structure my knowledge and establish myself as a competent developer. Also, I want to be
-            a part of the cool team.
+            Aspiring Frontend Developer with a passion for cutting-edge web technologies and their potential to enhance everyday life.
+            Driven to grow technical expertise and actively contribute to a dynamic team with fresh ideas and a focus on quality.
+            Committed to continuous learning and creating impactful, user-centered projects.
           </p>
         </div>
         <div class="skills">
@@ -78,40 +81,62 @@
           <ul class="skills-list">
             <li>HTML5</li>
             <li>CSS3</li>
+            <li>JavaScript ES6+</li>
             <li>GIT</li>
-            <li>Webpack</li>
-            <li>JavaScript</li>
-            <li>React</React></li>
+            <li>React</li>
+            <li>JSX</li>
+            <li>SASS</li>
           </ul>
         </div>
         <div class="experience">
-          <h3 class="experienc-title">Experience</h3>
+          <h3 class="experienc-title">Work Experience</h3>
           <ul class="experience-list">
-            <li>
+            <li class="experience-list__position">
               <h4 class="experience-position">Work abroad</h4>
               <span><i>September 2015 - 2021</i></span>
-              <p class="experience-description">
-                Worked in positions: -production line worker at a TV factory;
-                -coordinator and translator for Ukrainian workers at the factory for the production of ventilation
-                parts;
-                - furniture warehouse worker.
-              </p>
+              <div class="experience-description">Worked in positions:
+                <ul class="job-responsibilities">
+                  <li>production line worker at a TV factory</li>
+                  <li>furniture warehouse worker</li>
+                  <li>logistic warehouse worker</li>
+                </ul>
+              </div>
             </li>
-            <li>
+            <li class="experience-list__position">
+              <h4 class="experience-position">
+                Coordinator of Ukrainian Workers at "Air Spiralo" Poland </h4>
+              <span><i>September 2017 - December 2017</i></span>
+              <div class="experience-description">Job Responsibilities:
+                <ul class="job-responsibilities">
+                  <li>coordination of interaction between Ukrainian and Polish workers</li>
+                  <li>translation of documents and job instructions from Polish to Ukrainian</li>
+                  <li>translation of introductory training for employees from Ukraine</li>
+                  <li>cooperation with Leaders and Management in the field of labor organization of workers from Ukraine</li>
+                  <li>verification of the presence of Ukrainian workers</li>
+                </ul>
+              </div>
+            </li>
+            <li class="experience-list__position">
               <h4 class="experience-position">Information Center Operator at Meest-Express LLC </h4>
               <span><i>May 2014 - May 2015</i></span>
-              <p class="experience-description">
-                Job Responsibilities: Providing up-to-date information on the company's services, transportation costs,
-                and delivery terms.
-              </p>
+              <div class="experience-description">Job Responsibilities:
+                <ul class="job-responsibilities">
+                  <li>providing up-to-date information on the company's services</li>
+                  <li>transportation costs</li>
+                  <li>and delivery terms</li>
+                </ul>
+              </div>
             </li>
-            <li>
+            <li class="experience-list__position">
               <h4 class="experience-position"> Technical Support Specialist at JSC “Farlep Invest" </h4>
               <span><i>October 2010 - July 2013</i></span>
-              <p class="experience-description">
-                Job Responsibilities: Diagnosis of the absence and poor connection to the Internet.
-                Configure online equipment and electronic clients. Support for users of the domain and hosting services.
-              </p>
+              <div class="experience-description">Job Responsibilities:
+                <ul class="job-responsibilities">
+                  <li>diagnosis of the absence and poor connection to the Internet</li>
+                  <li>configure online equipment and electronic clients</li>
+                  <li>support for users of the domain and hosting services</li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -119,10 +144,10 @@
           <h3 class="education-title">Education</h3>
           <h4 class="university">National University “Lviv Polytechnic”, Ukraine.</h4>
           <div class="education-description">
-            <span>Master`s degree: Management of Organizations.</span>
+            <span>Master`s degree in Management of Organizations.</span>
             <span><i>September 2005 - July 2010</i></span>
           </div>
-          <h3>Completed courses</h3>
+          <h3>Additional Education</h3>
           <ul class="education-courses">
             <li>
               <div class="courses-details">
@@ -138,20 +163,10 @@
             </li>
             <li>
               <div class="courses-details">
-              <span>Fundamentals of Web UI development through the open online platform "Prometeus".</span>
+              <span>Fundamentals of Web UI development through the open online platform "Prometheus".</span>
               <span>December 2016 - February 2017</span>
             </div>
             </li>
-          </ul>
-        </div>
-        <div class="interests">
-          <h3 class="interests-title">Interests</h3>
-          <ul class="interests-list">
-            <li>Socializing with friends</li>
-            <li>Watching movies</li>
-            <li>Reading books</li>
-            <li>Driving</li>
-            <li>Traveling</li>
           </ul>
         </div>
       </div>

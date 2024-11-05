@@ -20,7 +20,7 @@ a {
   display: flex;
   margin: 0 auto;
   width: 990px;
-  border: 1px solid #D3D3D3;
+  /* border: 1px solid #D3D3D3; */
 }
 
 .sidebar {
@@ -59,12 +59,16 @@ a {
 
 .full-name {
   font-weight: 600;
-  font-size: 32px;
-  line-height: 34px;
+  font-size: 20px;
+  line-height: 18px;
   text-align: center;
   color: #264061;
-  margin-top: 50px;
-  margin-bottom: 25px;
+  margin-top: 10px;
+  /* margin-bottom: 25px; */
+}
+
+.full-name > h3 {
+  border-bottom: none;
 }
 
 .my-photo {
@@ -79,7 +83,7 @@ h3 {
   font-size: 26px;
   line-height: 26px;
   border-bottom: 2px solid #376193;
-  margin: 25px auto 20px;
+  margin: 20px auto;
 
 }
 
@@ -97,8 +101,16 @@ h3 {
   padding-left: 35px;
 }
 
+.experience-list__position {
+  margin-bottom: 10px;
+}
+
 .experience-description {
   margin: 10px auto;
+}
+
+.job-responsibilities {
+  list-style:circle;
 }
 
 
@@ -143,4 +155,5 @@ h3 {
 
 .map-marker {
   cursor:auto;
+  width: 20px;
 }
